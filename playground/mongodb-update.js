@@ -5,7 +5,7 @@ MongoClient.connect('mongodb://localhost/TodoApp', { useNewUrlParser: true }, (e
     }
     console.log('Connected to MongoDB server');
     const db = client.db('TodoApp');
-    db.collection('Users').findOneAndUpdate({
+    db.collection('Todos').findOneAndUpdate({
         _id: new ObjectID('57abbcf4fd13a094e481cf2c')
       }, {
         $set: {
